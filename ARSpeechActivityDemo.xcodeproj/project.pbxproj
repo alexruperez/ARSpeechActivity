@@ -13,8 +13,6 @@
 		D5ACDDBC1861996200090F31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDBA1861996200090F31 /* InfoPlist.strings */; };
 		D5ACDDBE1861996200090F31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACDDBD1861996200090F31 /* main.m */; };
 		D5ACDDC21861996200090F31 /* ARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACDDC11861996200090F31 /* ARAppDelegate.m */; };
-		D5ACDDC51861996200090F31 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDC31861996200090F31 /* Main_iPhone.storyboard */; };
-		D5ACDDC81861996200090F31 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDC61861996200090F31 /* Main_iPad.storyboard */; };
 		D5ACDDCB1861996200090F31 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACDDCA1861996200090F31 /* ARViewController.m */; };
 		D5ACDDCD1861996200090F31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDCC1861996200090F31 /* Images.xcassets */; };
 		D5ACDDD41861996200090F31 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5ACDDD31861996200090F31 /* XCTest.framework */; };
@@ -22,6 +20,12 @@
 		D5ACDDD61861996200090F31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5ACDDB51861996200090F31 /* UIKit.framework */; };
 		D5ACDDDE1861996200090F31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDDC1861996200090F31 /* InfoPlist.strings */; };
 		D5ACDDE01861996200090F31 /* ARSpeechActivityDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACDDDF1861996200090F31 /* ARSpeechActivityDemoTests.m */; };
+		D5ACDDEC18619A0C00090F31 /* ARSpeechActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACDDEB18619A0C00090F31 /* ARSpeechActivity.m */; };
+		D5ACDDF218619A6C00090F31 /* ARSpeechActivity-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDEF18619A6C00090F31 /* ARSpeechActivity-iPad.png */; };
+		D5ACDDF318619A6C00090F31 /* ARSpeechActivity-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDF018619A6C00090F31 /* ARSpeechActivity-iPad@2x.png */; };
+		D5ACDDF418619A6C00090F31 /* ARSpeechActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDF118619A6C00090F31 /* ARSpeechActivity@2x.png */; };
+		D5ACDDF61861A61C00090F31 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5ACDDF51861A61C00090F31 /* AVFoundation.framework */; };
+		D5ACDDF71861ACDF00090F31 /* ARSpeechActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5ACDDF91861ACDF00090F31 /* ARSpeechActivity.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +49,6 @@
 		D5ACDDBF1861996200090F31 /* ARSpeechActivityDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARSpeechActivityDemo-Prefix.pch"; sourceTree = "<group>"; };
 		D5ACDDC01861996200090F31 /* ARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAppDelegate.h; sourceTree = "<group>"; };
 		D5ACDDC11861996200090F31 /* ARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAppDelegate.m; sourceTree = "<group>"; };
-		D5ACDDC41861996200090F31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		D5ACDDC71861996200090F31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		D5ACDDC91861996200090F31 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
 		D5ACDDCA1861996200090F31 /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 		D5ACDDCC1861996200090F31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +57,15 @@
 		D5ACDDDB1861996200090F31 /* ARSpeechActivityDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARSpeechActivityDemoTests-Info.plist"; sourceTree = "<group>"; };
 		D5ACDDDD1861996200090F31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D5ACDDDF1861996200090F31 /* ARSpeechActivityDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSpeechActivityDemoTests.m; sourceTree = "<group>"; };
+		D5ACDDEA18619A0C00090F31 /* ARSpeechActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARSpeechActivity.h; path = ARSpeechActivity/ARSpeechActivity.h; sourceTree = SOURCE_ROOT; };
+		D5ACDDEB18619A0C00090F31 /* ARSpeechActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ARSpeechActivity.m; path = ARSpeechActivity/ARSpeechActivity.m; sourceTree = SOURCE_ROOT; };
+		D5ACDDEF18619A6C00090F31 /* ARSpeechActivity-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARSpeechActivity-iPad.png"; path = "ARSpeechActivity/ARSpeechActivity-iPad.png"; sourceTree = SOURCE_ROOT; };
+		D5ACDDF018619A6C00090F31 /* ARSpeechActivity-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARSpeechActivity-iPad@2x.png"; path = "ARSpeechActivity/ARSpeechActivity-iPad@2x.png"; sourceTree = SOURCE_ROOT; };
+		D5ACDDF118619A6C00090F31 /* ARSpeechActivity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ARSpeechActivity@2x.png"; path = "ARSpeechActivity/ARSpeechActivity@2x.png"; sourceTree = SOURCE_ROOT; };
+		D5ACDDF51861A61C00090F31 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D5ACDDF81861ACDF00090F31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/ARSpeechActivity.strings; sourceTree = "<group>"; };
+		D5ACDDFA1861AD6000090F31 /* es-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-ES"; path = "es-ES.lproj/ARSpeechActivity.strings"; sourceTree = "<group>"; };
+		D5ACDDFB1861AD6800090F31 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ARSpeechActivity.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5ACDDF61861A61C00090F31 /* AVFoundation.framework in Frameworks */,
 				D5ACDDB41861996200090F31 /* CoreGraphics.framework in Frameworks */,
 				D5ACDDB61861996200090F31 /* UIKit.framework in Frameworks */,
 				D5ACDDB21861996200090F31 /* Foundation.framework in Frameworks */,
@@ -103,6 +115,7 @@
 		D5ACDDB01861996200090F31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5ACDDF51861A61C00090F31 /* AVFoundation.framework */,
 				D5ACDDB11861996200090F31 /* Foundation.framework */,
 				D5ACDDB31861996200090F31 /* CoreGraphics.framework */,
 				D5ACDDB51861996200090F31 /* UIKit.framework */,
@@ -116,10 +129,9 @@
 			children = (
 				D5ACDDC01861996200090F31 /* ARAppDelegate.h */,
 				D5ACDDC11861996200090F31 /* ARAppDelegate.m */,
-				D5ACDDC31861996200090F31 /* Main_iPhone.storyboard */,
-				D5ACDDC61861996200090F31 /* Main_iPad.storyboard */,
 				D5ACDDC91861996200090F31 /* ARViewController.h */,
 				D5ACDDCA1861996200090F31 /* ARViewController.m */,
+				D5ACDDE9186199C700090F31 /* ARSpeechActivity */,
 				D5ACDDCC1861996200090F31 /* Images.xcassets */,
 				D5ACDDB81861996200090F31 /* Supporting Files */,
 			);
@@ -153,6 +165,19 @@
 				D5ACDDDC1861996200090F31 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5ACDDE9186199C700090F31 /* ARSpeechActivity */ = {
+			isa = PBXGroup;
+			children = (
+				D5ACDDF91861ACDF00090F31 /* ARSpeechActivity.strings */,
+				D5ACDDEA18619A0C00090F31 /* ARSpeechActivity.h */,
+				D5ACDDEB18619A0C00090F31 /* ARSpeechActivity.m */,
+				D5ACDDF118619A6C00090F31 /* ARSpeechActivity@2x.png */,
+				D5ACDDEF18619A6C00090F31 /* ARSpeechActivity-iPad.png */,
+				D5ACDDF018619A6C00090F31 /* ARSpeechActivity-iPad@2x.png */,
+			);
+			name = ARSpeechActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +240,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-ES",
+				es,
 			);
 			mainGroup = D5ACDDA51861996200090F31;
 			productRefGroup = D5ACDDAF1861996200090F31 /* Products */;
@@ -232,10 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5ACDDC81861996200090F31 /* Main_iPad.storyboard in Resources */,
+				D5ACDDF418619A6C00090F31 /* ARSpeechActivity@2x.png in Resources */,
+				D5ACDDF71861ACDF00090F31 /* ARSpeechActivity.strings in Resources */,
 				D5ACDDCD1861996200090F31 /* Images.xcassets in Resources */,
-				D5ACDDC51861996200090F31 /* Main_iPhone.storyboard in Resources */,
 				D5ACDDBC1861996200090F31 /* InfoPlist.strings in Resources */,
+				D5ACDDF318619A6C00090F31 /* ARSpeechActivity-iPad@2x.png in Resources */,
+				D5ACDDF218619A6C00090F31 /* ARSpeechActivity-iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5ACDDBE1861996200090F31 /* main.m in Sources */,
+				D5ACDDEC18619A0C00090F31 /* ARSpeechActivity.m in Sources */,
 				D5ACDDCB1861996200090F31 /* ARViewController.m in Sources */,
 				D5ACDDC21861996200090F31 /* ARAppDelegate.m in Sources */,
 			);
@@ -287,22 +317,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D5ACDDC31861996200090F31 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5ACDDC41861996200090F31 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		D5ACDDC61861996200090F31 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5ACDDC71861996200090F31 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		D5ACDDDC1861996200090F31 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -310,6 +324,17 @@
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
+		};
+		D5ACDDF91861ACDF00090F31 /* ARSpeechActivity.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5ACDDF81861ACDF00090F31 /* en */,
+				D5ACDDFA1861AD6000090F31 /* es-ES */,
+				D5ACDDFB1861AD6800090F31 /* es */,
+			);
+			name = ARSpeechActivity.strings;
+			path = ARSpeechActivity;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -475,6 +500,7 @@
 				D5ACDDE51861996200090F31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5ACDDE61861996200090F31 /* Build configuration list for PBXNativeTarget "ARSpeechActivityDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +509,7 @@
 				D5ACDDE81861996200090F31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
