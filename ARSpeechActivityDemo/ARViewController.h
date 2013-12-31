@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ARViewController : UIViewController
+@interface ARViewController : UIViewController <UITextFieldDelegate>
 
 @end

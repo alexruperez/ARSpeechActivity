@@ -72,10 +72,11 @@
         if ([activityItem isKindOfClass:[NSString class]]) {
             self.speechSynthesizer.delegate = self.synthesizerDelegate;
             self.speechUtterance = [[AVSpeechUtterance alloc] initWithString:activityItem];
-            if (self.voice)
+            if (self.voice) {
                 self.speechUtterance.voice = self.voice;
-            else
+            } else {
                 self.speechUtterance.voice = [self voiceLanguageForText:activityItem];
+            }
             [self.speechUtterance setRate:self.rate];
             [self.speechUtterance setPitchMultiplier:self.pitchMultiplier];
             [self.speechUtterance setPreUtteranceDelay:self.preUtteranceDelay];
