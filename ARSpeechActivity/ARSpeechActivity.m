@@ -13,6 +13,8 @@
 @property (nonatomic, strong) AVSpeechSynthesizer *speechSynthesizer;
 @property (nonatomic, strong) AVSpeechUtterance *speechUtterance;
 
+- (AVSpeechSynthesisVoice *)voiceLanguageForText:(NSString *)text;
+
 @end
 
 @implementation ARSpeechActivity
@@ -70,7 +72,10 @@
         if ([activityItem isKindOfClass:[NSString class]]) {
             self.speechSynthesizer.delegate = self.synthesizerDelegate;
             self.speechUtterance = [[AVSpeechUtterance alloc] initWithString:activityItem];
-            if (self.voice) self.speechUtterance.voice = self.voice;
+            if (self.voice)
+                self.speechUtterance.voice = self.voice;
+            else
+                self.speechUtterance.voice = [self voiceLanguageForText:activityItem];
             [self.speechUtterance setRate:self.rate];
             [self.speechUtterance setPitchMultiplier:self.pitchMultiplier];
             [self.speechUtterance setPreUtteranceDelay:self.preUtteranceDelay];
@@ -88,6 +93,32 @@
     }
     
     [self activityDidFinish:completed];
+}
+
+/**
+ * Language detection taken from Eric Wolfe's contribution to Hark https://github.com/kgn/Hark
+ */
+- (AVSpeechSynthesisVoice *)voiceLanguageForText:(NSString *)text
+{
+    CFRange range = CFRangeMake(0, MIN(400, text.length));
+    NSString *currentLanguage = [AVSpeechSynthesisVoice currentLanguageCode];
+    NSString *language = (NSString *)CFBridgingRelease(CFStringTokenizerCopyBestStringLanguage((CFStringRef)text, range));
+    if(language && ![currentLanguage hasPrefix:language]){
+        NSArray *availableLanguages = [[AVSpeechSynthesisVoice speechVoices] valueForKeyPath:@"language"];
+        if([availableLanguages containsObject:language]){
+            return [AVSpeechSynthesisVoice voiceWithLanguage:language];
+        }
+        
+        // Fall back to searching for languages starting with the current language code
+        NSString *languageCode = [[language componentsSeparatedByString:@"-"] firstObject];
+        for(NSString *language in availableLanguages){
+            if([language hasPrefix:languageCode]){
+                return [AVSpeechSynthesisVoice voiceWithLanguage:language];
+            }
+        }
+    }
+    
+    return [AVSpeechSynthesisVoice voiceWithLanguage:currentLanguage];
 }
 
 @end
