@@ -41,11 +41,13 @@
     return YES;
 }
 
-- (void)showActivities:(id)sender {
+- (void)showActivities:(UIButton *)button {
 	
 	ARSpeechActivity *speechActivity = [[ARSpeechActivity alloc] init];
 	
 	UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:@[self.textField.text] applicationActivities:@[speechActivity]];
+    activityVC.popoverPresentationController.sourceView = button;
+    activityVC.popoverPresentationController.sourceRect = button.bounds;
 	
 	[self presentViewController:activityVC animated:YES completion:nil];
 }
