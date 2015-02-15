@@ -1,0 +1,6 @@
+language: objective-c
+before_install:
+- gem install xcpretty
+script:
+- set -o pipefail
+- xcodebuild -project ARSpeechActivityDemo.xcodeproj -scheme ARSpeechActivityDemo test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
