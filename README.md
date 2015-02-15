@@ -2,7 +2,6 @@
 
 [![Twitter](http://img.shields.io/badge/contact-@alexruperez-blue.svg?style=flat)](http://twitter.com/alexruperez)
 [![GitHub Issues](http://img.shields.io/github/issues/alexruperez/ARSpeechActivity.svg?style=flat)](http://github.com/alexruperez/ARSpeechActivity/issues)
-[![CI Status](http://img.shields.io/travis/alexruperez/ARSpeechActivity.svg?style=flat)](https://travis-ci.org/alexruperez/ARSpeechActivity)
 [![Version](https://img.shields.io/cocoapods/v/ARSpeechActivity.svg?style=flat)](http://cocoadocs.org/docsets/ARSpeechActivity)
 [![License](https://img.shields.io/cocoapods/l/ARSpeechActivity.svg?style=flat)](http://cocoadocs.org/docsets/ARSpeechActivity)
 [![Platform](https://img.shields.io/cocoapods/p/ARSpeechActivity.svg?style=flat)](http://cocoadocs.org/docsets/ARSpeechActivity)
