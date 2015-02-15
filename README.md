@@ -31,7 +31,7 @@ Simply `alloc`/`init` an instance of `ARSpeechActivity` and pass that object int
 NSString *textToRead = @"Hello World!";
 ARSpeechActivity *speechActivity = [[ARSpeechActivity alloc] init];
 UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[textToRead] applicationActivities:@[speechActivity]];
-	[self presentViewController:activityVC animated:YES completion:nil];
+	[self presentViewController:activityViewController animated:YES completion:nil];
 ```
 
 Note that you can include the activity in any UIActivityViewController and it will only be shown to the user if there is a NSString in the activity items.
