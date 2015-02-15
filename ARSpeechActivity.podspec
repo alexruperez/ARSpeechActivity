@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/alexruperez/ARSpeechActivity.git', :tag => s.version.to_s }
   s.source_files = 'ARSpeechActivity/*.{h,m}'
 	s.resource_bundles = {
-	    'ARSpeechActivity' => [ARSpeechActivity/*.{png,lproj}]
+	    'ARSpeechActivity' => ['ARSpeechActivity/*.{png,lproj,strings}']
 	}
   s.requires_arc = true
 	s.frameworks = 'UIKit'
